@@ -1,40 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<center>
+<h1><a href="https://education-at-school.vercel.app/">Education at School 🏫</a></h1>
+</center>
+<center>
+<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
 
-## Getting Started
+<img src="https://i.imgur.com/nHHb29F.png" />
+<hr />
+</center>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨Tecnologias
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ - [React](https://react.dev/)
+ - [Typescript](https://www.typescriptlang.org/)
+ - [NextJS](https://nextjs.org/)
+ - [TailwindCSS](https://tailwindcss.com/)
+ - [Lucide React](https://lucide.dev/)
+ - [Victory](https://commerce.nearform.com/open-source/victory/about)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 💻 Projeto
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+O projeto Education at School faz parte de um trabalho escolar e tem como finalidade expor gráficos de dados de uma [pesquisa levantamento](https://pt.surveymonkey.com/mp/3-types-survey-research/) realizada na nossa rede de ensino acerca do tema "Educação na Escola". A pesquisa foi realizada com professores e alunos.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🚀 Como executar
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ - Clone o repositório para sua máquina com o comando `git clone https://github.com/vdevs777/education-at-school`
+ - Instale as dependências com o comando `pnpm i`
+ - Rode o projeto com `pnpm run dev`
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
+Esse projeto está sob a licença MIT. Veja o arquivo  [LICENSE](https://github.com/vdevs777/education-at-school/blob/main/LICENSE.md)  para mais detalhes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<hr />
+Feito por vdevs777! 🌟
