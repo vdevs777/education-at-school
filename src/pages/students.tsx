@@ -1,4 +1,5 @@
 import { ChartCard } from "@/components/chart-card";
+import { PageHeader } from "@/components/page-header";
 import {
   question1,
   question2,
@@ -9,40 +10,18 @@ import {
   question7,
   question8,
   question10,
-} from "@/data/data";
-import { CornerRightUp } from "lucide-react";
-import { useEffect, useState } from "react";
-import { useWindowSize } from "react-use";
+} from "@/data/students-data";
 
 export default function Students() {
-  const [variantBreakpoint, setVariantBreakpoint] = useState(false)
-  const { width } = useWindowSize();
-  const breakpoint = width < 640;
-
-  useEffect(() => {
-    setVariantBreakpoint(breakpoint)
-  }, [])
-
   return (
     <>
-      <div className="flex flex-row justify-between items-center">
-        <h1 className="text-slate-300 font-bold text-2xl">Alunos</h1>
-        <div className="flex flex-row gap-5 justify-center items-center">
-          <a
-            href="/teachers"
-            className="cursor-pointer text-blue-600 hover:text-blue-400 text-xs sm:text-sm flex flex-row"
-          >
-            Professores
-            <CornerRightUp size={variantBreakpoint ? 16 : 22} />
-          </a>
-          <a
-            href="/"
-            className="cursor-pointer text-blue-600 hover:text-blue-400 text-xs sm:text-sm flex flex-row items-center"
-          >
-            Introdução <CornerRightUp size={variantBreakpoint ? 16 : 22} />
-          </a>
-        </div>
-      </div>
+      <PageHeader
+        title="Alunos"
+        links={[
+          { text: "Introdução", redirectTo: "/" },
+          { text: "Professores", redirectTo: "/teachers" },
+        ]}
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4 mt-4">
         <ChartCard
           array={question1}
@@ -79,6 +58,7 @@ export default function Students() {
         <ChartCard
           array={question10}
           question="Você está se adaptando bem ao novo ensino médio?"
+          observations="* ninguém respondeu 'não sei'"
         />
       </div>
     </>

@@ -1,11 +1,6 @@
-import { COLORS, question1 } from "@/data/data";
 import { useEffect, useState } from "react";
 import { useWindowSize } from "react-use";
-import {
-  VictoryContainer,
-  VictoryLabel,
-  VictoryPie,
-} from "victory";
+import { VictoryContainer, VictoryLabel, VictoryPie } from "victory";
 
 type Data = {
   x: string;
@@ -15,17 +10,20 @@ type Data = {
 type ChartCardProps = {
   question: string;
   array: Data[];
+  observations?: string;
 };
 
-export function ChartCard({ question, array }: ChartCardProps) {
-  const [variantChartSize, setVariantChartSize] = useState(false)
+const COLORS = ["#1E90FF", "#50C878", "#FFD700", "#FF5733"];
+
+export function ChartCard({ question, array, observations }: ChartCardProps) {
+  const [variantChartSize, setVariantChartSize] = useState(false);
   const { width } = useWindowSize();
   const breakpoint1 = width > 1024;
-  const total = question1.reduce((acc, cur) => acc + cur.y, 0);
-  
+  const total = array.reduce((acc, cur) => acc + cur.y, 0);
+
   useEffect(() => {
-    setVariantChartSize(breakpoint1)
-  }, [])
+    setVariantChartSize(breakpoint1);
+  }, []);
 
   return (
     <div className="w-full bg-slate-900 sm:[430px] rounded-xl p-4">
@@ -40,7 +38,7 @@ export function ChartCard({ question, array }: ChartCardProps) {
           width={variantChartSize ? 300 : 200}
           height={variantChartSize ? 300 : 200}
           labels={({ datum }) => `${Math.round((datum.y / total) * 100)}%`}
-          events={[{ target: "data", eventHandlers: {} }]} 
+          events={[{ target: "data", eventHandlers: {} }]}
           labelComponent={
             <VictoryLabel style={{ fill: "#CBD5E1", fontFamily: "Inter" }} />
           }
@@ -55,6 +53,7 @@ export function ChartCard({ question, array }: ChartCardProps) {
               <p className="text-slate-300 text-xs sm:text-sm">{item.x}</p>
             </div>
           ))}
+          <p className="text-slate-300 text-xs sm:text-sm">{observations}</p>
         </div>
       </div>
     </div>

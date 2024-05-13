@@ -1,5 +1,3 @@
-export const COLORS = ["#1E90FF", "#50C878", "#FFD700", "#FF5733"];
-
 export const question1 = [
   {
     x: "Sim",
@@ -115,14 +113,10 @@ export const question10 = [
   },
   {
     x: "Não",
-    y: 15,
+    y: 14,
   },
   {
     x: "Parcialmente",
     y: 8,
-  },
-  {
-    x: "Não sei",
-    y: 0,
   },
 ];

@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="text-slate-300 font-bold text-2xl">
           Pesquisa survey: Educação na Escola
         </h1>
-        <p className="text-slate-300">
+        <p className="text-slate-300 text-justify">
           A educação vai além das salas de aula e dos currículos acadêmicos; ela
           abrange também a formação de pessoas responsáveis e éticas. Dentro do
           ambiente escolar, a educação dos alunos desempenha um papel crucial na
@@ -22,8 +22,7 @@ export default function Home() {
           inclusiva. A formação dos estudantes vai além do domínio de conteúdos
           acadêmicos e se estende ao desenvolvimento de habilidades sociais e
           atitudes responsáveis. Nessa pesquisa foram entrevistados 29 alunos da
-          turma do 2º ano REG 2, os professores que nos dão aula e os
-          professores-apoio.
+          turma do 2º ano REG 2 e 14 professores (incluindo professores-apoio).
         </p>
         <div className="flex flex-col items-center">
           <div className="mt-5">
