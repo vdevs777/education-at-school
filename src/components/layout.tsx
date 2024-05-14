@@ -12,7 +12,7 @@ export function Layout({ children }: LayoutProps) {
         <Sidebar />
         <div className="flex-grow px-5 md:px-12 bg-slate-950">{children}</div>
       </div>
-      <footer className="flex items-center justify-center bg-slate-900 text-slate-300 text-xs h-[2.2vh]">
+      <footer className="flex items-center justify-center bg-slate-900 text-slate-300 text-xs h-[2.4vh]">
         © 2024 - João V. S. Cunha&nbsp;
         <a
           href="https://github.com/vdevs777"
