@@ -17,8 +17,7 @@ export default function Home() {
           responsabilidade e a colaboração. Desde o simples ato de manter a sala
           de aula limpa até o respeito pelos professores e funcionários, cada
           comportamento dos alunos contribui para a construção de um ambiente
-          propício ao aprendizado e ao desenvolvimento pessoal. Ao examinar como
-          a educação dos alunos pode promover uma cultura escolar positiva e
+          propício ao aprendizado e ao desenvolvimento pessoal. A educação dos alunos pode promover uma cultura escolar positiva e
           inclusiva. A formação dos estudantes vai além do domínio de conteúdos
           acadêmicos e se estende ao desenvolvimento de habilidades sociais e
           atitudes responsáveis. Nessa pesquisa foram entrevistados 29 alunos da
